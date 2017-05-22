@@ -1,5 +1,6 @@
 #include <lista.h>
 #include <stdlib.h>
+
 Lista vacia()
 {
     return NULL;
@@ -36,6 +37,6 @@ void impLista(Lista l)
         {
             impElem(cabeza(l));
             impLista(resto(l));
-        } while (esVacia(l))
+        } while (esVacia(l));
     }
 }
