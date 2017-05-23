@@ -13,3 +13,7 @@ int esVacia(Lista);
 Elem cabeza(Lista);
 Lista resto(Lista);
 void impLista(Lista);
+Lista pegaListas(Lista, Lista);
+Lista invierteLista(Lista);
+Lista insOrden(Elem, Lista);
+Lista ordenaLista(Lista);
