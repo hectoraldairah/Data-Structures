@@ -3,5 +3,11 @@
 typedef struct node
 {
     Elem dato;
-    struct node *sig;
+    struct node *next;
 } * Stack;
+
+Stack empty();
+void push(Stack *, Elem);
+int isEmpty(Stack);
+int top(Stack);
+Stack pop(Stack);
