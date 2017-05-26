@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
+
 int isBalanced(char *string)
 {
     Stack stack = empty();
