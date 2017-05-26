@@ -6,11 +6,11 @@ Stack empty()
     return NULL;
 }
 
-Stack push(Stack *s, Elem e)
+void push(Stack *s, Elem e)
 {
     Stack t = (Stack)malloc(sizeof(struct node));
     t->dato = e;
-    t->sig = *s;
+    t->next = *s;
     *s = t;
 }
 
@@ -19,12 +19,12 @@ int isEmpty(Stack s)
     return s == NULL;
 }
 
-Stack top(Stack s)
+int top(Stack s)
 {
     return s->dato;
 }
 
 Stack pop(Stack s)
 {
-    return s->sig;
+    return s->next;
 }

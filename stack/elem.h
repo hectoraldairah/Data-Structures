@@ -3,4 +3,4 @@
 typedef int Elem;
 
 void printElem(Elem);
-int isSmaller(Elem, Elem)
+int isSmaller(Elem, Elem);
