@@ -1,5 +1,6 @@
 #pragma once
 
+
 typedef int Elem;
 
 void printElem(Elem);
