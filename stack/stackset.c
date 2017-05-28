@@ -14,7 +14,7 @@ int isBalanced(char *string)
         else if (c == '}' || c == ']' || c == ')')
             if (isEmpty(stack))
             {
-                puts("Is not balanced");
+                puts("Not balanced");
                 break;
             }
             else
@@ -22,7 +22,7 @@ int isBalanced(char *string)
     }
 
     if (!isEmpty(stack))
-        puts("Is not balanced");
+        puts("Not balanced");
 }
 
 int isOperator(char c)
