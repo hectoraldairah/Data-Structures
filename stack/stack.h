@@ -2,7 +2,7 @@
 
 typedef struct node
 {
-    Elem dato;
+    Elem value;
     struct node *next;
 } * Stack;
 

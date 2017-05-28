@@ -9,7 +9,7 @@ Stack empty()
 void push(Stack *s, Elem e)
 {
     Stack t = (Stack)malloc(sizeof(struct node));
-    t->dato = e;
+    t->value = e;
     t->next = *s;
     *s = t;
 }
@@ -21,7 +21,7 @@ int isEmpty(Stack s)
 
 int top(Stack s)
 {
-    return s->dato;
+    return s->value;
 }
 
 Stack pop(Stack s)
