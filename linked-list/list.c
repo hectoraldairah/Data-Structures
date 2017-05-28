@@ -44,36 +44,30 @@ void impList(List l)
 List unionLists(List l1, List l2)
 {
     return isEmpty(l1) ? l2 : cons(head(l1), unionLists(rest(l1), l2));
-
 }
 
 List reverseList(List l)
 {
-    if(isEmpty(l))
+    if (isEmpty(l))
         return l;
     else
-        return unionLists(reverseList(rest(l)), cons(head(l), empty()));    
+        return unionLists(reverseList(rest(l)), cons(head(l), empty()));
 }
 
 List insOrd(Elem e, List l)
 {
     if (isEmpty(l))
         return cons(e, l);
-    else if (isSmaller(e , head(l)))
+    else if (isSmaller(e, head(l)))
         return cons(e, l);
     else
-        return  cons(head(l), insOrd(e, rest(l))); 
+        return cons(head(l), insOrd(e, rest(l)));
 }
-
 
 List sortList(List l)
 {
-    if(isEmpty(l))
+    if (isEmpty(l))
         return l;
-    else 
-        return insOrd(head(l), sortList(rest(l)));    
+    else
+        return insOrd(head(l), sortList(rest(l)));
 }
-
-
-
-
