@@ -17,4 +17,3 @@ int areEqual(Elem e1, Elem e2)
     if (e1 == e2)
         return 1;
 }
-
