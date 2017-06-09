@@ -13,8 +13,8 @@ typedef struct qNode
 }* Queue;
 
 Queue newQueue();
-int isNewQueue(Queue q);
-Queue enQueue(Queue q, Elem e);
+int isNewQueue(Queue);
+Queue enQueue(Queue, Elem);
 Elem Front(Queue);
-void unQueue(Queue q);
-void printQueue(Queue q);
+void unQueue(Queue);
+void printQueue(Queue);

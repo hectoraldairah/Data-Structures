@@ -2,6 +2,7 @@
 #include <elem.h>
 #include <stdlib.h>
 
+
 Queue newQueue()
 {
     Queue newq = (Queue)malloc(sizeof(struct qNode));
