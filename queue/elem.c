@@ -1,6 +1,7 @@
 #include <elem.h>
 #include <stdio.h>
 
+
 void printElem(Elem e)
 {
     printf("%d", e);
